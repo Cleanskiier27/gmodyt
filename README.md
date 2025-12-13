@@ -29,7 +29,10 @@ To establish sustainable waste management and resource recovery systems for luna
 │   ├── operational-protocols/     # Operating procedures
 │   ├── environmental-data/        # Lunar environment data
 │   └── research/                  # Research papers and references
-├── src/                           # Source code (future implementation)
+├── challengerepo/                 # Interactive web applications
+│   ├── nbapp/                     # NetworkBuster control dashboard
+│   ├── usbnb/                     # USB NetworkBuster device manager
+│   └── real-time-overlay/         # Real-time data overlay
 ├── data/                          # Sample data and payloads
 ├── web-app/                       # Documentation web interface
 └── README.md                      # This file
@@ -40,7 +43,11 @@ To establish sustainable waste management and resource recovery systems for luna
 1. Clone this repository
 2. Review the documentation in `docs/`
 3. Explore the web app by opening `web-app/index.html`
-4. Examine technical specifications for implementation details
+4. Try the interactive applications in `challengerepo/`:
+   - **nbapp**: Control dashboard for the recycling system
+   - **usbnb**: USB device manager interface
+   - **real-time-overlay**: Real-time data visualization
+5. Examine technical specifications for implementation details
 
 ## 🔬 Technical Highlights
 
