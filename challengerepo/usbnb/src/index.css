@@ -1,0 +1,80 @@
+:root {
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #0f0f1a;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.glass-panel {
+    background: rgba(15, 15, 26, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.pulse-ring {
+    animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-ring {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.scanline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(139, 92, 246, 0.02) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 9999;
+    animation: scan 8s linear infinite;
+}
+
+@keyframes scan {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(4px);
+    }
+}
